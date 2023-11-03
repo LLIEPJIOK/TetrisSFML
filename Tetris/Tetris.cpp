@@ -37,8 +37,8 @@ Tetris::Tetris() : cell_width_(32), width_(10), height_(20), field_(height_ + 2,
 	game_over_text_.setFont(font_);
 	game_over_text_.setFillColor(sf::Color::Black);
 	game_over_text_.setCharacterSize(24);
-	game_over_text_.setPosition((width_ + 4) * cell_width_, 16 * cell_width_);
-	game_over_text_.setString("Game over! Press enter to start new game");
+	game_over_text_.setPosition((width_ + 3) * cell_width_, 16 * cell_width_);
+	game_over_text_.setString("Game over!\nPress enter to start new game");
 
 	record_text_.setFont(font_);
 	record_text_.setFillColor(sf::Color::Black);
@@ -86,6 +86,7 @@ void Tetris::create_new_game()
 		}
 
 		score_ = 0;
+		score_text_.setString("Score: 0");
 	}
 }
 

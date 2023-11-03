@@ -6,7 +6,7 @@ int main()
 	srand(static_cast<unsigned int>(time(nullptr)));
 
 	Tetris tetris;
-	sf::RenderWindow window(sf::VideoMode(1000, 800), "Tetris");
+	sf::RenderWindow window(sf::VideoMode(750, 700), "Tetris");
 
 	sf::Clock clock;
 	float time = 0.0f;
